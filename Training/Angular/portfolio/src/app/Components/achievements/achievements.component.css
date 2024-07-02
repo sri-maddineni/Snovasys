@@ -1,0 +1,29 @@
+.mobilerowtitle{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mobilerowtitle .des{
+    font-size: 0.8rem;
+}
+
+.mobilerowtitle h5{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:856px) {
+    
+    .date{
+        font-size: 1rem;
+    }
+
+    .loctitle{
+        font-size: 1.2rem;
+    }
+
+    .mobilerowtitle{
+        display: flex;
+        flex-direction: column;
+    }
+}

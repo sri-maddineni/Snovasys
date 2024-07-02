@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Internshala",
+    "type": "Training course",
+    "location": "Remote(Online)",
+    "project": "BEC Studo",
+    "course": "Android App development using kotlin",
+    "technologies": "XML, Kotlin, Android studio, Postman",
+    "link": "",
+    "certificate":"https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fandroid%20app.png?alt=media&token=9883df76-4439-4056-bac2-e1af151dd311"
+  },
+  {
+    "company": "Maltech",
+    "type": "Internship",
+    "location": "Remote(Online)",
+    "project": "Small tasks as assignments, React News App",
+    "course": "Web developer",
+    "technologies": "Html, css, js, bootstrap, postman, reactjs",
+    "link": "",
+    "certificate":"https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fmaltech.png?alt=media&token=ed3633a2-a4f7-435b-9e42-879f1bf21ade"
+  },
+  {
+    "company": "S4H Technologies",
+    "type": "Project assigned",
+    "location": "Remote(Online)",
+    "project": "KisanRaj",
+    "course": "Full stack web development",
+    "technologies": "MERN stack - MongoDb, ExpressJs, ReactJs, NodeJs",
+    "link": "",
+    "certificate":"https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fs4h.png?alt=media&token=e7e5d501-1555-47a8-a0e2-574e38477595"
+  }
+]

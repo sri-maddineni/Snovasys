@@ -1,0 +1,624 @@
+<div class="h1 text-danger">
+    {{errormsge}}
+</div>
+
+<div class="top" id="/projects#top">
+
+</div>
+
+<div class="whole" style="display: flex; flex-direction: column;">
+    <div class="projectsrow text-center my-3">
+        <a href="/projects#becstudoapp" class=" m-1 btn btn-sm btn-outline-primary">BEC Studo(App)</a>
+        <a href="/projects#becstudoweb" class=" m-1 btn btn-sm btn-outline-primary">BEC Studo(website)</a>
+        <a href="/projects#kisanraj" class=" m-1 btn btn-sm btn-outline-primary">KisanRaj</a>
+        <a href="/projects#tasknet" class=" m-1 btn btn-sm btn-outline-primary">Tasknet</a>
+        <!-- <a href="/projects#portfolio" class=" m-1 btn btn-sm btn-outline-primary">Portfolio</a> -->
+        <a href="/projects#gitrepos" class=" m-1 btn btn-sm btn-outline-primary">GitRepos</a>
+        <a href="/projects#becconfessions" class=" m-1 btn btn-sm btn-outline-primary">BEC Confessions</a>
+        <a href="/projects#jotit" class=" m-1 btn btn-sm btn-outline-primary">JOT IT</a>
+    </div>
+
+
+    <hr>
+
+    <div class="container">
+        <div *ngFor="let p of projects; index as i">
+            <div class="m-3 project" id={{p.code}}>
+
+                <h1 class="text-center my-3">{{p.title}}</h1>
+
+                <div *ngIf="p.type==='app'; else elseBlock" class="approw">
+                    <div class="appimgbtn">
+                        <img class="m-3 p-3" style="border: solid 1px black;max-height: 75vh;" src={{p.image}} alt="">
+                        <a class=" m-2 btn btn-warning" href={{p.link}} target="_blank">view {{p.type}} in play
+                            store</a>
+                    </div>
+
+                    <div class="m-1 p-3" id="usage">
+                        <h5>Description:</h5>
+                        <p>{{p.des}}</p>
+                        <h5>Technologies used :</h5>
+                        <ul *ngFor="let t of p.technologies; index as il" style="list-style: none;">
+                            <li>{{il+1}}. {{t}}</li>
+                        </ul>
+                    </div>
+
+                    <div class="m-1 p-3" id="features">
+                        <h5>{{p.featuredes}}</h5>
+                        <ul *ngFor="let f of p.features; index as il" style="list-style: none;">
+                            <li>{{il+1}}. {{f}}</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <!-- if it is a website -->
+
+                <ng-template #elseBlock>
+
+                    <div class="webcol">
+                        <img class="m-3 p-3 webimg" src={{p.image}} alt="">
+                        <div class="text-center">
+                            <a href={{p.link}} target="_blank" class=" m-2 text-center btn btn-warning btn-sm">view
+                                {{p.type}}site</a>
+                        </div>
+                        <div class="norower">
+                            <div class=" m-2 p-2">
+                                <h5>Description:</h5>
+                                <p>{{p.des}}</p>
+                                <div>
+                                    <h5>Technologies used :</h5>
+                                    <ul *ngFor="let t of p.technologies; index as il" style="list-style: none;">
+                                        <li>{{il+1}}. {{t}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class=" m-2 p-2">
+                                <h5>{{p.featuredes}}</h5>
+                                <ul *ngFor="let f of p.features; index as il" style="list-style: none;">
+                                    <li>{{il+1}}. {{f}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </ng-template>
+
+                <hr>
+
+                <div class="container  m-2"
+                    style="display: flex; flex-direction: row; justify-content: space-evenly;flex-wrap: wrap;">
+                    <div *ngFor="let image of p.images; index as imgi">
+                        <img src={{image}} class="m-2 p-1 bimg" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+
+
+</div>
+<div class="btndiv">
+    <a href="/projects#top"  class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up mx-2"></i>Go to top</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://play-lh.googleusercontent.com/GB1_i_I46wgNtzwITnpPNMyU6EW_O7giINmLnIzRYJN6A9bdqxgbJJbRGIkCrKsIBng=w240-h480-rw"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">BEC Studo</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/0RR_PlNnkG2yHi9FnD-d5JuGj0IamktK29IhLIja5Oihbjdnsahcc3DFWEOD95zgozU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/weLxj85QfwP6W5bjAPHwDqscNvlltDYzcl1XmGW0UcocfDxifCQDJtICsO8dT8EZjwo=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/6YZFccBu9Nh3s2OSDJklNCz0pm0u6cn1JcFeROpMXEI5iiYuRDDTpvvQyWlKyuv9GPc=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/OfGj3MDEWL-PJyus5bFvS2DCQU-bV0yCeiUkCL4uMZp1oWx-a4gRq2shfAWjShVVzdU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/YrZ_y5NhwxuPpUc-MxzP36IPPEfUT4PjN3e6IPLNv8uZFh5qsc1ys7uAzOO399k6yxiB=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/nkPZvmAyXZVBl5xyru0PZhfMKnd9gOz1DJKxmInQZFVF6z2Xnmx2ZzEtWRLRUVm3cHYj=w526-h296-rw"
+            alt="">
+    </div>
+</div>
+
+<hr>
+
+<div class="container" style="display: flex; flex-direction: row;justify-content: space-around;">
+    <div class="image" style="display: flex; flex-direction: column; width: 45%;">
+        <img class="m-1 p-1"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fbec%20studo%20home%20page.png?alt=media&token=34c2b68d-bcf2-46a1-be9a-235b1afe9607"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">BEC Studo</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fplacement%20materiasl.png?alt=media&token=4bb9ddcd-1593-498c-a1a1-dc143ac14b67"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fplacements%20companies.png?alt=media&token=d7bc041c-94ef-4ddb-8fc9-924c0e507199"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2FPrevious%20papers.png?alt=media&token=096b60fd-33df-40e1-9ad5-a847a6eb3ede"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fy20results.png?alt=media&token=65568f00-8efe-4620-b860-6b94b644b058"
+            alt="">
+    </div>
+
+</div>
+
+
+<hr>
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fkisanraj%20homepage.png?alt=media&token=bdfc2aea-42df-47c3-94fd-9b3c5df80d74"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">BEC Studo</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fbuycommodity.png?alt=media&token=89d2f15e-513c-42ed-b6b5-2967526dfb9d"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fproduct%20details.png?alt=media&token=1c7a51c5-a7a7-408b-bd3d-79c0ac0963f5"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fwishlist.png?alt=media&token=e45d4596-f150-4243-831a-a635552f12f7"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fcart.png?alt=media&token=c43f8e16-9cd4-480c-8830-d7dc88759417"
+            alt="">
+    </div>
+
+</div>
+
+
+
+<hr>
+
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Ftasknet%20homepage.png?alt=media&token=51657279-7c28-4a46-bf52-00c6cf17c362"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">BEC Studo</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fabout%20page%20tasknet.png?alt=media&token=7ae8310e-f57d-4a4d-9c55-49489227d58c"
+            alt="">
+    </div>
+
+</div>
+
+<hr>
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://play-lh.googleusercontent.com/GB1_i_I46wgNtzwITnpPNMyU6EW_O7giINmLnIzRYJN6A9bdqxgbJJbRGIkCrKsIBng=w240-h480-rw"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">Portfolio</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/0RR_PlNnkG2yHi9FnD-d5JuGj0IamktK29IhLIja5Oihbjdnsahcc3DFWEOD95zgozU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/weLxj85QfwP6W5bjAPHwDqscNvlltDYzcl1XmGW0UcocfDxifCQDJtICsO8dT8EZjwo=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/6YZFccBu9Nh3s2OSDJklNCz0pm0u6cn1JcFeROpMXEI5iiYuRDDTpvvQyWlKyuv9GPc=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/OfGj3MDEWL-PJyus5bFvS2DCQU-bV0yCeiUkCL4uMZp1oWx-a4gRq2shfAWjShVVzdU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/YrZ_y5NhwxuPpUc-MxzP36IPPEfUT4PjN3e6IPLNv8uZFh5qsc1ys7uAzOO399k6yxiB=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/nkPZvmAyXZVBl5xyru0PZhfMKnd9gOz1DJKxmInQZFVF6z2Xnmx2ZzEtWRLRUVm3cHYj=w526-h296-rw"
+            alt="">
+    </div>
+</div>
+
+
+<hr>
+
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fgitrepos.png?alt=media&token=2b311212-18ad-4d41-8492-4804a75e572c"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">GitRepos</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/0RR_PlNnkG2yHi9FnD-d5JuGj0IamktK29IhLIja5Oihbjdnsahcc3DFWEOD95zgozU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/weLxj85QfwP6W5bjAPHwDqscNvlltDYzcl1XmGW0UcocfDxifCQDJtICsO8dT8EZjwo=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/6YZFccBu9Nh3s2OSDJklNCz0pm0u6cn1JcFeROpMXEI5iiYuRDDTpvvQyWlKyuv9GPc=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/OfGj3MDEWL-PJyus5bFvS2DCQU-bV0yCeiUkCL4uMZp1oWx-a4gRq2shfAWjShVVzdU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/YrZ_y5NhwxuPpUc-MxzP36IPPEfUT4PjN3e6IPLNv8uZFh5qsc1ys7uAzOO399k6yxiB=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/nkPZvmAyXZVBl5xyru0PZhfMKnd9gOz1DJKxmInQZFVF6z2Xnmx2ZzEtWRLRUVm3cHYj=w526-h296-rw"
+            alt="">
+    </div>
+</div>
+
+
+<hr>
+
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://play-lh.googleusercontent.com/GB1_i_I46wgNtzwITnpPNMyU6EW_O7giINmLnIzRYJN6A9bdqxgbJJbRGIkCrKsIBng=w240-h480-rw"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">BEC Confessions</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/0RR_PlNnkG2yHi9FnD-d5JuGj0IamktK29IhLIja5Oihbjdnsahcc3DFWEOD95zgozU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/weLxj85QfwP6W5bjAPHwDqscNvlltDYzcl1XmGW0UcocfDxifCQDJtICsO8dT8EZjwo=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/6YZFccBu9Nh3s2OSDJklNCz0pm0u6cn1JcFeROpMXEI5iiYuRDDTpvvQyWlKyuv9GPc=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/OfGj3MDEWL-PJyus5bFvS2DCQU-bV0yCeiUkCL4uMZp1oWx-a4gRq2shfAWjShVVzdU=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/YrZ_y5NhwxuPpUc-MxzP36IPPEfUT4PjN3e6IPLNv8uZFh5qsc1ys7uAzOO399k6yxiB=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/nkPZvmAyXZVBl5xyru0PZhfMKnd9gOz1DJKxmInQZFVF6z2Xnmx2ZzEtWRLRUVm3cHYj=w526-h296-rw"
+            alt="">
+    </div>
+</div>
+
+<hr>
+
+
+<div class="container" style="display: flex; flex-direction: row;">
+    <div class="image m-2" style="display: flex; flex-direction: column; width: 45%;">
+        <img src="https://play-lh.googleusercontent.com/QwcqPlI5fphrWK08L7sNGiZrOiw4gyX_eZ6MS1kTC7Jjgav2RZC-Bg9fw6P5P5dpU2E=w240-h480-rw"
+            style="width: 100%;border: solid 1px black; height: auto;" alt="loading">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="m-1">
+            <button class="m-1 btn-sm btn btn-warning">View App in Play store</button>
+            <button class="m-1 btn-sm btn btn-primary">All images</button>
+        </div>
+    </div>
+    <div class="prodetails">
+        <h3>Title : <span class="p">JOT IT</span></h3>
+        <h3>Des : <span class="p">Designed solely for the students of Bapatla Engineering College</span></h3>
+        <p class="h3">How to use : <span class="p">Install it from play store (Download) and use.</span></p>
+        <p>Features: Features includes the facilities to meet the requirements of BEC students such as food,
+            accomodation and academical activities</p>
+        <p>which includes,</p>
+        <ul>
+            <li>Hostels</li>
+            <li>Rooms</li>
+            <li>Curry points</li>
+            <li>Mess</li>
+            <li>Previous Papers</li>
+            <li>Study Materials</li>
+            <li>Services</li>
+            <li>Technical Guidance</li>
+
+        </ul>
+        <p>Technologies used: Android, Firebase, XML, kotlin, </p>
+    </div>
+</div>
+<div class="imagegallery m-3" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/ChMI8Wkfr9SGgBAGD3_fwXaIkX1QouQeAzox8UPFkBI6KnmcFP16FwV2Y4g__pgdJ5c=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/daJZe2QAoZYGSExGKGOX1ujm2Kw2DpdA3_U7vdbR2d0jvZBITZLmf5Wj2akyU1IbmJE=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/RInIVdtl586nlN-J9x7Jl_fo35A1isWULOCPLP2zP05xvGKLWQU7xiMoH9GaTXzt27LD=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/yHrx3ebvWcQkMZR2eOVrZ6MJoA5-7c5Vg-Hhh2zXAm4Rf_aidKUlYNwJ2M4hFh5bDmkw=w526-h296-rw"
+            alt="">
+    </div>
+    <div class="img">
+        <img class="m-1 p-1" style="max-width: 20rem; border: solid 1px black;"
+            src="https://play-lh.googleusercontent.com/Hs6KVu4f3KF7y95ln9YE2_CKO3FwVlPKak3SSOR1oU0MJgHnpaLz08iT1aWej2uJZsA=w526-h296-rw"
+            alt="">
+    </div>
+
+</div> -->

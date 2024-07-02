@@ -1,0 +1,224 @@
+[
+  {
+    "title": "BEC Studo - Android App",
+    "code": "becstudoapp",
+    "type": "app",
+    "link": "https://play.google.com/store/apps/details?id=com.iTKonnects.becfrag",
+    "des": "Designed for the students of Bapatla Engineering College",
+    "use": "Students of BEC can find food and accomodation, acadamic materials and mentors with ease",
+    "featuredes": "Students have access to : (around BEC) ",
+    "image": "https://play-lh.googleusercontent.com/GB1_i_I46wgNtzwITnpPNMyU6EW_O7giINmLnIzRYJN6A9bdqxgbJJbRGIkCrKsIBng=w240-h480-rw",
+    "images": [
+      "https://play-lh.googleusercontent.com/0RR_PlNnkG2yHi9FnD-d5JuGj0IamktK29IhLIja5Oihbjdnsahcc3DFWEOD95zgozU=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/weLxj85QfwP6W5bjAPHwDqscNvlltDYzcl1XmGW0UcocfDxifCQDJtICsO8dT8EZjwo=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/6YZFccBu9Nh3s2OSDJklNCz0pm0u6cn1JcFeROpMXEI5iiYuRDDTpvvQyWlKyuv9GPc=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/OfGj3MDEWL-PJyus5bFvS2DCQU-bV0yCeiUkCL4uMZp1oWx-a4gRq2shfAWjShVVzdU=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/YrZ_y5NhwxuPpUc-MxzP36IPPEfUT4PjN3e6IPLNv8uZFh5qsc1ys7uAzOO399k6yxiB=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/nkPZvmAyXZVBl5xyru0PZhfMKnd9gOz1DJKxmInQZFVF6z2Xnmx2ZzEtWRLRUVm3cHYj=w526-h296-rw"
+    ],
+    "features": [
+      "Hostels",
+      "Rooms",
+      "Flats",
+      "Mess",
+      "Curry points",
+      "Previous papers",
+      "Placement materials",
+      "Academic materials",
+      "Technical Guidance",
+      "Services",
+      "Restaurants",
+      "Food courts etc..,"
+    ],
+    "technologies": [
+      "Android studio",
+      "XML for Frontend",
+      "Kotlin for backend",
+      "Firebase for Database and server",
+      "Play store for publishing"
+    ]
+  },
+  {
+    "title": "BEC Studo (website)",
+    "code": "becstudoweb",
+    "type": "web",
+    "link": "https://becstudo.vercel.app",
+    "des": "Designed for the students of Bapatla Engineering College, just converted the android app to website so that even Apple users can also get benefitted!",
+    "use": "Students of BEC can find food and accomodation, acadamic materials and mentors with ease",
+    "featuredes": "Students have access to (around BEC): ",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fbec%20studo%20home%20page.png?alt=media&token=34c2b68d-bcf2-46a1-be9a-235b1afe9607",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fplacement%20materiasl.png?alt=media&token=4bb9ddcd-1593-498c-a1a1-dc143ac14b67",
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fplacements%20companies.png?alt=media&token=d7bc041c-94ef-4ddb-8fc9-924c0e507199",
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2FPrevious%20papers.png?alt=media&token=096b60fd-33df-40e1-9ad5-a847a6eb3ede",
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/becstudoweb%2Fhomepage%2Fy20results.png?alt=media&token=65568f00-8efe-4620-b860-6b94b644b058"
+    ],
+    "features": [
+      "Hostels",
+      "Rooms",
+      "Flats",
+      "Mess",
+      "Curry points",
+      "Previous papers",
+      "Placement materials",
+      "Academic materials",
+      "Technical Guidance",
+      "Services",
+      "Restaurants",
+      "Food courts etc..,"
+    ],
+    "technologies": [
+      "Html, css, js",
+      "ReactJs, Bootstrap, antdesign",
+      "NodeJs, ExpressJs",
+      "MongoDb",
+      "Vercel for frontend hosting",
+      "onRender for backend Hosting"
+    ]
+  },
+  {
+    "title": "KisanRaj- website",
+    "code": "kisanraj",
+    "type": "web",
+    "link": "https://kisanraj.netlify.app",
+    "des": "Designed for Indian Farmers, which will provide the facility to farmers to list their crops before the crop gets yielded, resembles same like an Ecommerce website",
+    "use": "Farmers can sell without the need of market yards, with best suitable selling price",
+    "featuredes": "Farmers can ",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fkisanraj%20homepage.png?alt=media&token=bdfc2aea-42df-47c3-94fd-9b3c5df80d74",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fbuycommodity.png?alt=media&token=89d2f15e-513c-42ed-b6b5-2967526dfb9d",
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fproduct%20details.png?alt=media&token=1c7a51c5-a7a7-408b-bd3d-79c0ac0963f5",
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fwishlist.png?alt=media&token=e45d4596-f150-4243-831a-a635552f12f7",
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fcart.png?alt=media&token=c43f8e16-9cd4-480c-8830-d7dc88759417"
+    ],
+    "features": [
+      "Buy Commodity",
+      "Sell Commodity",
+      "Buy equipment",
+      "Sell Equipment",
+      "Hire Equipment",
+      "Chat with seller and negotiate price",
+      "Wishlist the products",
+      "Add products to cart / place orders",
+      "view responded farmers for listed products",
+      "Chat window similar to whatsapp",
+      "profile window similar to instagram",
+      "Maintain a private farmers network and keep in touch all the time",
+      "Post a requirement in advance",
+      "View requirements from other farmers nation wide"
+    ],
+    "technologies": [
+      "Html, css, js",
+      "ReactJs, Bootstrap, antdesign",
+      "NodeJs, ExpressJs",
+      "MongoDb",
+      "Vercel for frontend hosting",
+      "onRender for backend Hosting"
+    ]
+  },
+  {
+    "title": "Tasknet - website",
+    "code": "tasknet",
+    "type": "web",
+    "link": "https://tasknet.netlify.app",
+    "des": "Designed for general purpose",
+    "use": "Anyone can add todos tasks, inorder not to forget them, and keep track of all tasks",
+    "featuredes": "Anyone can",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Ftasknet%20homepage.png?alt=media&token=51657279-7c28-4a46-bf52-00c6cf17c362",
+    "images": [
+      "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fabout%20page%20tasknet.png?alt=media&token=7ae8310e-f57d-4a4d-9c55-49489227d58c"
+    ],
+    "features": [
+      "Add a todo task",
+      "Add title and description",
+      "Track tasks",
+      "Delete a task",
+      "Mark a task completed without deleting for further review",
+      "Never lose data, local storage is used",
+      "No credentials or login required",
+      "Just a static site without browser overload"
+    ],
+    "technologies": [
+      "Html, css, js",
+      "AngularJs, Bootstrap",
+      "Netlify for hosting"
+    ]
+  },
+  {
+    "title": "GitRepos- website",
+    "code": "gitrepos",
+    "type": "web",
+    "link": "https://gitrepos.itkonnects.com",
+    "des": "Designed for Programmers and students",
+    "use": "Users can find repositories just by entering username of a person or account",
+    "featuredes": "users can ",
+    "image": "https://firebasestorage.googleapis.com/v0/b/bec-hostels-64d05.appspot.com/o/Other%20projects%2FPortfolio%20project%2Fgitrepos.png?alt=media&token=2b311212-18ad-4d41-8492-4804a75e572c",
+    "images": [],
+    "features": [
+      "Get repositories on entering username of account",
+      "Very simple webpage with github api"
+    ],
+    "technologies": [
+      "Html, css, js",
+      "Github pages forb hosting",
+      "Google pages for making it live with iTKonnects"
+    ]
+  },
+  {
+    "title": "BEC Confessions",
+    "code": "becconfessions",
+    "type": "app",
+    "link": "https://play.google.com/store/apps/details?id=com.iTKonnects.BECConfessions",
+    "des": "Designed for the students of Bapatla Engineering College",
+    "use": "Students of BEC can find other students and share messages anonymously without revealing their details, and it is maintained secret about who shared the message! Most used for introverts to share their feelings!",
+    "featuredes": "Students can: ",
+    "image": "https://play-lh.googleusercontent.com/nsr7p2tXi-2gDLfCtJsG_mszT8Fq_zp5OJelAfW5hMKRrO89o3VHV8BgBJdx-L2-cSpP=w240-h480-rw",
+    "images": [
+      "https://play-lh.googleusercontent.com/q9URSam7au4qjxwCv_OTvPSVaLZifeyZdJ-SLejMogDN5rYXpiOJZ12vkdRhmluocQg=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/BzPwVO8T5XsFpF0sQX9hY1GPYIm3_sO8TXEZrhnXSOMfD3fJpm8GM1yfllG8KUG9EX8=w526-h296-rw"
+    ],
+    "features": [
+      "Write a confession anonymously",
+      "View confessions posted by others",
+      "View confessions posted by him/her to other person",
+      "Anonymous is most prioritized!"
+    ],
+    "technologies": [
+      "Android studio",
+      "XML for Frontend",
+      "Kotlin for backend",
+      "Firebase for Database and server",
+      "Play store for publishing"
+    ]
+  },
+  {
+    "title": "JOT IT",
+    "code": "jotit",
+    "type": "app",
+    "link": "https://play.google.com/store/apps/details?id=com.iTKonnects.jotit",
+    "des": "Designed for making users easier to note down tasks and journal",
+    "use": "Users have additional feature of adding emojis to define their mood while writing!",
+    "featuredes": "Users can : ",
+    "image": "https://play-lh.googleusercontent.com/QwcqPlI5fphrWK08L7sNGiZrOiw4gyX_eZ6MS1kTC7Jjgav2RZC-Bg9fw6P5P5dpU2E=w240-h480-rw",
+    "images": [
+      "https://play-lh.googleusercontent.com/ChMI8Wkfr9SGgBAGD3_fwXaIkX1QouQeAzox8UPFkBI6KnmcFP16FwV2Y4g__pgdJ5c=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/daJZe2QAoZYGSExGKGOX1ujm2Kw2DpdA3_U7vdbR2d0jvZBITZLmf5Wj2akyU1IbmJE=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/RInIVdtl586nlN-J9x7Jl_fo35A1isWULOCPLP2zP05xvGKLWQU7xiMoH9GaTXzt27LD=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/yHrx3ebvWcQkMZR2eOVrZ6MJoA5-7c5Vg-Hhh2zXAm4Rf_aidKUlYNwJ2M4hFh5bDmkw=w526-h296-rw"
+    ],
+    "features": [
+      "Note an event",
+      "Add an emoji to define the mood",
+      "Update an event",
+      "search for an event based on title or description",
+      "Made Prioritising the event search handling"
+    ],
+    "technologies": [
+      "Android studio",
+      "XML for Frontend",
+      "Kotlin for backend",
+      "Firebase for Database and server",
+      "Play store for publishing"
+    ]
+  }
+]

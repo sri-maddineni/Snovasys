@@ -1,0 +1,88 @@
+.norower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.btndiv{
+    position: fixed;
+    bottom: 10px; /* Adjust vertical position as needed */
+    right: 10px; 
+}
+
+.project {
+    background-color: rgb(218, 202, 202);
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.778), rgb(255, 0, 230));
+    color: white;
+    border-radius: 10px;
+}
+
+.approw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.appimgbtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.webcol{
+    display: flex;
+    flex-direction: column;
+}
+
+.bimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 30rem;
+}
+
+.webimg{
+    width: 95%;
+    align-items: center;
+}
+
+
+@media screen and (max-width:856px) {
+
+    .approw{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .webcol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .norower {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .bimg{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 15rem;
+    }
+
+    .btndiv{
+        position: fixed;
+        bottom: 10px; /* Adjust vertical position as needed */
+        right: 15px; 
+    }
+
+    
+    
+    
+    
+}

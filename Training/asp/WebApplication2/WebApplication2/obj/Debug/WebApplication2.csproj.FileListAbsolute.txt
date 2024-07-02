@@ -1,0 +1,2 @@
+D:\Snovasys\snovasysgithub\Training\asp\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.AssemblyReference.cache
+D:\Snovasys\snovasysgithub\Training\asp\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache

@@ -1,0 +1,41 @@
+<div>
+    <div class="blogcontainer" *ngFor="let b of blogs">
+        <div class="card m-3" style="width: 60rem;">
+            <div class="card-header">
+                {{b.title}}
+            </div>
+            <div class="card-body">
+                <p class="card-title p-2">{{b.des}} </p>
+            </div>
+            <div class="card-text card-footer text-body-secondary" style="display: flex; flex-direction: row; justify-content: space-between;">
+                <h6>tags: <span class="text-muted fw fw-bold">{{b.tags}}</span></h6>
+                <div>
+                    <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                </div>
+                <p>{{b.date}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 id="add" class="text-center">Add a new blog item</h2>
+    <hr>
+    <form class="p-5" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="exampleInputtext1" class="form-label">Title</label>
+          <input type="text" class="form-control" [(ngModel)]="title" placeholder="Enter title" required="true" id="exampleInputtext1" name="title" aria-describedby="textHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Description</label>
+          <input type="text" [(ngModel)]="des" required="true" class="form-control" placeholder="Enter description" name="des" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-sm">Add a blog</button>
+      </form>
+      <h3 class="text-danger text-center">{{em}}</h3>
+</div>
+
+<div>
+    <a href="/blogs#add"></a>
+</div>

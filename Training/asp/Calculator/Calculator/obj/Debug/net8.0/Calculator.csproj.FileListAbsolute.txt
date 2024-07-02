@@ -1,0 +1,15 @@
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\bin\Debug\net8.0\Calculator.exe
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\bin\Debug\net8.0\Calculator.deps.json
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\bin\Debug\net8.0\Calculator.runtimeconfig.json
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\bin\Debug\net8.0\Calculator.dll
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\bin\Debug\net8.0\Calculator.pdb
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfoInputs.cache
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.AssemblyInfo.cs
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.csproj.CoreCompileInputs.cache
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.sourcelink.json
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.dll
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\refint\Calculator.dll
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.pdb
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\Calculator.genruntimeconfig.cache
+D:\Snovasys\snovasysgithub\Training\asp\Calculator\Calculator\obj\Debug\net8.0\ref\Calculator.dll

@@ -1,0 +1,50 @@
+<div class="container">
+    <div *ngFor="let a of ach; index as index">
+        <div style="width: 60%;" class="accordion" [id]="'accordionExample' + index">
+            <div class="accordion-item m-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        [attr.data-bs-target]="'#collapseOne' + index" aria-expanded="true"
+                        [attr.aria-controls]="'collapseOne' + index">
+                        <div>
+                            <div class="mobilerowtitle">
+                                <h5 class="loctitle">{{a.title}}</h5>
+                                <h5 class="des">{{a.des}} </h5>
+                                <h5 class="text-danger">{{a.date}} </h5>
+
+                            </div>
+
+                            <p>{{a.des}}</p>
+
+                        </div>
+
+                    </button>
+                </h2>
+                <div [id]="'collapseOne' + index" class="accordion-collapse collapse" [class.show]="index === 0"
+                    [attr.data-bs-parent]="'#accordionExample' + index">
+                    <div class="accordion-body">
+
+
+
+                        <div *ngIf="a.chief.length; else elseBlock">
+                            <h4>chief Guests:</h4>
+                            <div *ngFor="let c of a.chief">
+                                <li>{{c}} </li>
+                            </div>
+                        </div>
+                        <ng-template #elseBlock>
+                            
+                        </ng-template>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

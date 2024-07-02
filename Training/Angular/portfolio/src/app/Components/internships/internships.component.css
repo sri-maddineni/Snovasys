@@ -1,0 +1,51 @@
+.rower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.internship {
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to right, red, green);
+    color: white;
+    
+}
+
+.internship img {
+    max-width: 35%;
+    border: solid 1px white;
+    padding: 2px;
+
+}
+
+@media screen and (max-width:856px) {
+
+    .internship {
+        border: solid 1px black;
+        margin: 10px;
+        padding: 10px;
+        background-image: linear-gradient(to right, red, green);
+        color: white;
+
+    }
+
+    .internship img {
+        max-width: 100%;
+    }
+
+    .rower {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>{{childevent}}</h1>
+  <p> {{2.5 | currency : 'INR':'code'}} </p>
+  <app-child1 (childevent)="childevent=$event" [data]="datar"></app-child1>
+  <app-emplist></app-emplist>
+  
+</div>

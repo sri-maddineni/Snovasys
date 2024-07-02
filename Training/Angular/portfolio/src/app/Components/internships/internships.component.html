@@ -1,0 +1,32 @@
+<div class="container">
+    <div *ngFor="let i of internships" class="column">
+        <div class="internship card">
+            <div class="column">
+
+                <div class="text-center mb-3">
+                    <h3> {{i.company}}</h3>
+                    <h3> {{i.course}} </h3>
+                </div>
+
+                <div class="rower">
+
+                    <img src={{i.certificate}} alt="loading">
+                    <div class="details column">
+                        <h5 class="text-center">Description :</h5>
+                        <ul>
+                            <li>{{i.type}} </li>
+                            <li>{{i.location}}</li>
+                            <li>{{i.project}} </li>
+                            <li>{{i.technologies}} </li>
+                            <li> {{i.course}}</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

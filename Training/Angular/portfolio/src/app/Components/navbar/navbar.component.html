@@ -1,0 +1,36 @@
+<div class="web card m-2" style="height: 50px; margin-top: 30px;">
+    <div class="container nav">
+        <div class="navbar-content">
+            <div class="left">
+                <ul>
+                    <li class="text-dark brand"><a class="brand" routerLink="/">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a routerLink="/" class="text-dark active">Home</a></li>
+                    <li><a routerLink="/blog">Blog</a></li>
+                    <li><a routerLink="/projects">Projects</a></li>
+                    <li><a routerLink="/achievements">Achievements</a></li>
+                    <li><a routerLink="/academics">Academics</a></li>
+                    <li><a routerLink="/gallery">Gallery</a></li>
+                </ul>
+                <a routerLink="/login" class=" mx-1 btn btn-sm btn-outline-success loginbtn">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile">
+    <div class="nav bg-dark">
+        <div class="d-flex justify-content-between" style="width: 100%;">
+            <h3 class="text-warning m-2">Portfolio</h3>
+            
+
+            <button ngClass="clicked ? 'fas fa-bars fa-2x text-white' :'fas fa-xmark fa-2x text-white'"
+                (click)="statechange()">
+            </button>
+
+        </div>
+    </div>
+</div>

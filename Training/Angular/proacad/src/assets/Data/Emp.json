@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Alice",
+    "position": "Accountant",
+    "salary": 50000
+  },
+  {
+    "name": "Bob",
+    "position": "Sales Manager",
+    "salary": 60000
+  },
+  {
+    "name": "Charlie",
+    "position": "Software Developer",
+    "salary": 70000
+  }
+]
