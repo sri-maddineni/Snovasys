@@ -1,0 +1,87 @@
+db.createCollection("projects", {
+    validator: {
+      $jsonSchema: {
+        bsonType: "object",
+        required: ["pid", "pname"],
+        properties: {
+          pid: {
+            bsonType: "string",
+            description: "ID of the project - Required."
+          },
+          pname: {
+            bsonType: "string",
+            description: "Name of the project - Required."
+          },
+          description: {
+            bsonType: "string",
+            description: "Description of the project - Optional."
+          },
+          start: {
+            bsonType: "date",
+            description: "Start date of the project - Optional."
+          },
+          end: {
+            bsonType: ["date"],
+            description: "End date of the project - Optional."
+          },
+          budget: {
+            bsonType: "number",
+            description: "Budget allocated for the project - Optional."
+          },
+          scope: {
+            bsonType: "string",
+            description: "Scope of the project - Optional."
+          },
+          team: {
+            bsonType: "array",
+            description: "Array of team members involved in the project - Optional.",
+            items: {
+              bsonType: "object",
+              required: ["user_id", "name", "role"],
+              properties: {
+                user_id: {
+                  bsonType: "string",
+                  description: "ID of the user - Required."
+                },
+                name: {
+                  bsonType: "string",
+                  description: "Name of the user - Required."
+                },
+                role: {
+                  bsonType: "string",
+                  description: "Role of the user in the project - Required."
+                }
+              }
+            }
+          },
+          tasks: {
+            bsonType: "array",
+            description: "Array of tasks assigned for the project - Optional.",
+            items: {
+              bsonType: "object",
+              required: ["task_id", "task_name", "assigned_to", "due_date"],
+              properties: {
+                task_id: {
+                  bsonType: "string",
+                  description: "ID of the task - Required."
+                },
+                task_name: {
+                  bsonType: "string",
+                  description: "Name of the task - Required."
+                },
+                assigned_to: {
+                  bsonType: "string",
+                  description: "ID of the user to whom the task is assigned - Required."
+                },
+                due_date: {
+                  bsonType: "date",
+                  description: "Due date of the task - Required."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  })
+  

@@ -1,0 +1,35 @@
+[HttpPost]
+        [HttpOptions]
+        [Route(RouteConstants.GetEmployeesResignation)]
+        public JsonResult<BtrakJsonResult> GetEmployeesResignation(EmployeeResignationSearchInputModel employeeResignationSearchInputModel)
+        {
+            try
+            {
+                LoggingManager.Info(string.Format(LoggingManagerAppConstants.LoggingManagerInfoValue, "GetEmployeesResignation", "PayRoll Api"));
+
+                var validationMessages = new List<ValidationMessage>();
+
+                BtrakJsonResult btrakJsonResult;
+
+                List<EmployeeResignationSearchOutputModel> resignationStatus = _payRollService.GetEmployeesResignation(employeeResignationSearchInputModel, LoggedInContext, validationMessages);
+
+                if (UiHelper.CheckForValidationMessages(validationMessages, out btrakJsonResult))
+                {
+                    validationMessages.ForEach(validationMessage => LoggingManager.Warn(validationMessage.ToString()));
+
+                    LoggingManager.Warn(string.Format(LoggingManagerAppConstants.LoggingManagerInfoExitingValue, "GetEmployeesResignation", "PayRoll Api"));
+
+                    return Json(new BtrakJsonResult { Success = false, ApiResponseMessages = btrakJsonResult.ApiResponseMessages }, UiHelper.JsonSerializerNullValueIncludeSettings);
+                }
+
+                LoggingManager.Info(string.Format(LoggingManagerAppConstants.LoggingManagerInfoExitingValue, "GetEmployeesResignation", "PayRoll Api"));
+
+                return Json(new BtrakJsonResult { Data = resignationStatus, Success = true }, UiHelper.JsonSerializerNullValueIncludeSettings);
+            }
+            catch (Exception exception)
+            {
+                LoggingManager.Error(string.Format(LoggingManagerAppConstants.LoggingManagerErrorValue, "GetEmployeesResignation", "PayRollApiController ", exception.Message), exception);
+
+                return Json(new BtrakJsonResult(exception.Message), UiHelper.JsonSerializerNullValueIncludeSettings);
+            }
+        }

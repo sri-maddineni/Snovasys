@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|d:\\snovasys\\snovasysgithub\\training\\mongodb\\mongocrudoperations\\mongocrudoperations\\dataaccesslayer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|solutionrelative:mongocrudoperations\\dataaccesslayer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|d:\\snovasys\\snovasysgithub\\training\\mongodb\\mongocrudoperations\\mongocrudoperations\\dataaccesslayer\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|solutionrelative:mongocrudoperations\\dataaccesslayer\\icrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|d:\\snovasys\\snovasysgithub\\training\\mongodb\\mongocrudoperations\\mongocrudoperations\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|solutionrelative:mongocrudoperations\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|d:\\snovasys\\snovasysgithub\\training\\mongodb\\mongocrudoperations\\mongocrudoperations\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|solutionrelative:mongocrudoperations\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|d:\\snovasys\\snovasysgithub\\training\\mongodb\\mongocrudoperations\\mongocrudoperations\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB44C58F-53F6-4F7A-96EC-811CAE79AD76}|MongoCrudOperations\\MongoCrudOperations.csproj|solutionrelative:mongocrudoperations\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Crud.cs",
+              "DocumentMoniker": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\DataAccessLayer\\Crud.cs",
+              "RelativeDocumentMoniker": "MongoCrudOperations\\DataAccessLayer\\Crud.cs",
+              "ToolTip": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\DataAccessLayer\\Crud.cs",
+              "RelativeToolTip": "MongoCrudOperations\\DataAccessLayer\\Crud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T06:14:34.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICrud.cs",
+              "DocumentMoniker": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\DataAccessLayer\\ICrud.cs",
+              "RelativeDocumentMoniker": "MongoCrudOperations\\DataAccessLayer\\ICrud.cs",
+              "ToolTip": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\DataAccessLayer\\ICrud.cs",
+              "RelativeToolTip": "MongoCrudOperations\\DataAccessLayer\\ICrud.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T06:09:22.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "MongoCrudOperations\\Controllers\\ValuesController.cs",
+              "ToolTip": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "MongoCrudOperations\\Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T05:23:13.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "MongoCrudOperations\\Controllers\\TaskController.cs",
+              "ToolTip": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "MongoCrudOperations\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T05:20:59.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MongoCrudOperations\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Snovasys\\snovasysgithub\\Training\\mongodb\\MongoCrudOperations\\MongoCrudOperations\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MongoCrudOperations\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-18T04:53:33.748Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
