@@ -1,0 +1,15 @@
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.GeneratedMSBuildEditorConfig.editorconfig
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.AssemblyInfoInputs.cache
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.AssemblyInfo.cs
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.csproj.CoreCompileInputs.cache
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.sourcelink.json
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\bin\Debug\net8.0\folderfiles.exe
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\bin\Debug\net8.0\folderfiles.deps.json
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\bin\Debug\net8.0\folderfiles.runtimeconfig.json
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\bin\Debug\net8.0\folderfiles.dll
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\bin\Debug\net8.0\folderfiles.pdb
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.dll
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\refint\folderfiles.dll
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.pdb
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\folderfiles.genruntimeconfig.cache
+D:\Snovasys\snovasysgithub\Training\c#\console c#\folderfiles\folderfiles\obj\Debug\net8.0\ref\folderfiles.dll

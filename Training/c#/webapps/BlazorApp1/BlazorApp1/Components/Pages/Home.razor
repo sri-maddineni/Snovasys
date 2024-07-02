@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world, how r u!</h1>
+
+<button @onclick="@(()=>{t="hello";})">Click me</button>
+<h2>@t</h2>
+
+Welcome to your new app.
+
+@for (int i = 0; i < 10; i++)
+{
+	<p>@i@i</p>
+	
+}
+
+@code{
+
+	 string t = "srihari maddineni";
+
+}

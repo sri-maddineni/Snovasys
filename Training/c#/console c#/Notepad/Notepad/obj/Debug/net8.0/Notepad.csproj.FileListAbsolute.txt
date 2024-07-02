@@ -1,0 +1,15 @@
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\bin\Debug\net8.0\Notepad.exe
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\bin\Debug\net8.0\Notepad.deps.json
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\bin\Debug\net8.0\Notepad.runtimeconfig.json
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\bin\Debug\net8.0\Notepad.dll
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\bin\Debug\net8.0\Notepad.pdb
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.GeneratedMSBuildEditorConfig.editorconfig
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.AssemblyInfoInputs.cache
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.AssemblyInfo.cs
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.csproj.CoreCompileInputs.cache
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.sourcelink.json
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.dll
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\refint\Notepad.dll
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.pdb
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\Notepad.genruntimeconfig.cache
+D:\Snovasys\snovasysgithub\Training\c#\console c#\Notepad\Notepad\obj\Debug\net8.0\ref\Notepad.dll
