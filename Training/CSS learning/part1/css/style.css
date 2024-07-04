@@ -1,0 +1,50 @@
+h1{
+    color: rebeccapurple;
+}
+
+p{
+    font-family: cursive;
+}
+
+
+.batchdiv{
+    border: solid 1px black;
+    margin: 1%;
+  
+    
+}
+
+.btn-sm{
+    width: 96px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: solid 1px black;
+}
+
+.btn-warning{
+    border-right: solid 1px black;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:856px) {
+    .btns{
+        justify-content: space-between;
+    }
+
+    .batchdiv{
+        width: 100%;
+    }
+
+}
